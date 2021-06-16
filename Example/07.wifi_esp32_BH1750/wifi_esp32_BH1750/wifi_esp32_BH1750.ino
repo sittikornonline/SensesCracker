@@ -22,7 +22,7 @@ void setup() {
 }
 
 void loop() {
-  float lux = lightMeter.readLightLevel(); 0
+  float lux = lightMeter.readLightLevel(); 
   Serial.print("Light: "); Serial.print(lux);  Serial.println(" lx");
 
   String response = myiot.send(1, lux);
